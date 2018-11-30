@@ -1,6 +1,6 @@
 #Creamos la clase Persona
 class Persona(object):
-    #Creamos el constructor   
+    #Creamos el constructor que recibe el nombre y 3 notas 
     def __init__(self, n, n1, n2, n3):
         self.nombre = n
         self.nota1 = float(n1)
@@ -33,7 +33,7 @@ class Persona(object):
         return self.nota3
 
     #Metodo para calcular el promedio
-    def calculo_promedio(self):#Calculamos el promedio sumando las notas y dividiendo para 3
+    def calculo_promedio(self):#Calculamos el promedio sumando las 3 notas y dividiendo para 3
         return (self.nota1 + self.nota2 + self.nota3) / 3
     
     #Metodo str para presentar los datos con el Nombre y el promedio calculado
